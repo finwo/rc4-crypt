@@ -7,3 +7,13 @@ expect.extend(require('jest-isa'));
 test('Ensure rc4-crypt is a function', () => {
   expect(rc4).isA(Function);
 });
+
+test('Verify a round trip', async () => {
+  expect(rc4).isA(Function);
+
+  let encrypt = rc4('deadbeef'),
+      decrypt = rc4('deadbeef');
+
+  expect((await decrypt(await encrypt("Hello World"))).toString()).toBe("Hello World");
+
+});
