@@ -35,9 +35,9 @@ module.exports = function RC4(key) {
   }
   x = y = 0;
 
-  return async function coder(data) {
-    if (isBuffer(data)) return Buffer.from(await Promise.all([...data].map(coder)));
-    if ('string' === typeof data) return Buffer.from(await Promise.all([...Buffer.from(data)].map(coder)));
+  return function coder(data) {
+    if (isBuffer(data)) return Buffer.from([...data].map(coder));
+    if ('string' === typeof data) return Buffer.from([...Buffer.from(data)].map(coder));
     if ('number' !== typeof data) return false;
     x2    = (x++) % 256;
     y     = (s[x2] + y) % 256;

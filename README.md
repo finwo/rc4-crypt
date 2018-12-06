@@ -22,22 +22,17 @@ const rc4 = require('rc4-crypt');
 let encrypt = rc4("ENCRYPTION KEY"),
     decrypt = rc4("ENCRYPTION KEY");
 
-// Go asynchronous so you can copy-paste this code
-(async function() {
+// The data we're about to encrypt
+let plainData = "Hello World";
 
-  // The data we're about to encrypt
-  let plainData = "Hello World";
-  
-  // Actually encrypt the data
-  let ciphertext = await encrypt(plainData);
-  
-  // Let's decrypt it again
-  let decrypted = await decrypt(ciphertext);
-  
-  // Show the result
-  console.log(decrypted.toString());
-})();
+// Actually encrypt the data
+let ciphertext = encrypt(plainData);
 
+// Let's decrypt it again
+let decrypted = decrypt(ciphertext);
+
+// Show the result
+console.log(de
 ```
 
 ### Browser

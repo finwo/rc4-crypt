@@ -14,6 +14,6 @@ test('Verify a round trip', async () => {
   let encrypt = rc4('deadbeef'),
       decrypt = rc4('deadbeef');
 
-  expect((await decrypt(await encrypt("Hello World"))).toString()).toBe("Hello World");
+  expect(decrypt(encrypt("Hello World")).toString()).toBe("Hello World");
 
 });
