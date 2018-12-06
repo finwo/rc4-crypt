@@ -1,0 +1,4 @@
+.idea/
+.zedstate
+node_modules/
+coverage/

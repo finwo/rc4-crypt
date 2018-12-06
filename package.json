@@ -1,0 +1,31 @@
+{
+  "name": "rc4-crypt",
+  "version": "0.0.1",
+  "description": "Small rc4 cryptography library",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "NODE_ENV=babel jest --detectOpenHandles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/finwo/rc4-crypt.git"
+  },
+  "author": "Robin Bron <robin@finwo.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/finwo/rc4-crypt/issues"
+  },
+  "homepage": "https://gitlab.com/finwo/rc4-crypt#readme",
+  "dependencies": {
+    "is-buffer": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-jest": "^23.6.0",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "expect": "^23.6.0",
+    "jest": "^23.6.0",
+    "jest-isa": "0.0.4"
+  }
+}
