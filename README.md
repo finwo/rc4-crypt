@@ -2,8 +2,6 @@
 
 > Small rc4 cryptography library
 
-[![NPM](https://nodei.co/npm/rc4-crypt.png)](https://nodei.co/npm/rc4-crypt/)
-
 ## Install
 
 ```bash
@@ -32,7 +30,7 @@ let ciphertext = encrypt(plainData);
 let decrypted = decrypt(ciphertext);
 
 // Show the result
-console.log(de
+console.log(decrypted);
 ```
 
 ### Browser
