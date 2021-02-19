@@ -48,5 +48,4 @@ module.exports = ((Buffer) => {
       return data ^ s[(s[x2] + s[y]) % 256]
     }
   };
-})('function' === typeof Buffer ? Buffer : require('buffer'));
-
+})('function' === typeof Buffer ? Buffer : require('buffer').Buffer);
