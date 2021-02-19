@@ -27,6 +27,6 @@
     "babel-preset-env": "^1.7.0",
     "expect": "^23.6.0",
     "jest": "^23.6.0",
-    "jest-isa": "0.0.4"
+    "jest-isa": "0.0.5"
   }
 }
