@@ -17,6 +17,7 @@
   },
   "homepage": "https://gitlab.com/finwo/rc4-crypt#readme",
   "dependencies": {
+    "buffer": "^6.0.3",
     "is-buffer": "^2.0.3"
   },
   "devDependencies": {
