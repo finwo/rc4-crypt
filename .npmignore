@@ -1,0 +1,6 @@
+.babel*
+.editorconfig
+jest.config.js
+*.test.js
+.gitlab*
+.github
