@@ -1,6 +1,6 @@
 {
   "name": "rc4-crypt",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Small rc4 cryptography library",
   "main": "src/index.js",
   "scripts": {
