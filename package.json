@@ -4,6 +4,7 @@
   "description": "Small rc4 cryptography library",
   "main": "src/index.js",
   "scripts": {
+    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{print $2}' | sed 's/[\",]//g' | tr -d '[[:space:]]') && npm deprecate \"rc4-crypt@<${PACKAGE_VERSION}\" \"Rolling release, please update to ${PACKAGE_VERSION}\"",
     "test": "NODE_ENV=babel jest --detectOpenHandles"
   },
   "repository": {
@@ -20,6 +21,16 @@
     "buffer": "^6.0.3",
     "is-buffer": "^2.0.3"
   },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/finwo"
+    },
+    {
+      "type": "liberapay",
+      "url": "https://liberapay.com/finwo"
+    }
+  ],
   "devDependencies": {
     "babel-jest": "^23.6.0",
     "babel-plugin-add-module-exports": "^1.0.0",
